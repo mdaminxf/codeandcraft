@@ -2,17 +2,14 @@ import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 
 // GET a project
-export async function GET(req: NextRequest) {
-  const { searchParams, pathname } = new URL(req.url);
-  const id = pathname.split('/').pop(); // Get the [id] from the URL
-  const numericId = parseInt(id ?? '');
-
-  if (isNaN(numericId)) {
+export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
+  const id = parseInt(params.id);
+  if (isNaN(id)) {
     return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
   }
 
   try {
-    const project = await prisma.projects.findUnique({ where: { id: numericId } });
+    const project = await prisma.projects.findUnique({ where: { id } });
     if (!project) {
       return NextResponse.json({ error: 'Not found' }, { status: 404 });
     }
@@ -23,19 +20,16 @@ export async function GET(req: NextRequest) {
 }
 
 // PUT to update a project
-export async function PUT(req: NextRequest) {
-  const { pathname } = new URL(req.url);
-  const id = pathname.split('/').pop();
-  const numericId = parseInt(id ?? '');
-
-  if (isNaN(numericId)) {
+export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
+  const id = parseInt(params.id);
+  if (isNaN(id)) {
     return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
   }
 
   try {
     const body = await req.json();
     const updated = await prisma.projects.update({
-      where: { id: numericId },
+      where: { id },
       data: {
         title: body.title,
         description: body.description,
@@ -52,17 +46,14 @@ export async function PUT(req: NextRequest) {
 }
 
 // DELETE a project
-export async function DELETE(req: NextRequest) {
-  const { pathname } = new URL(req.url);
-  const id = pathname.split('/').pop();
-  const numericId = parseInt(id ?? '');
-
-  if (isNaN(numericId)) {
+export async function DELETE(req: NextRequest, { params }: { params: { id: string } }) {
+  const id = parseInt(params.id);
+  if (isNaN(id)) {
     return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
   }
 
   try {
-    await prisma.projects.delete({ where: { id: numericId } });
+    await prisma.projects.delete({ where: { id } });
     return NextResponse.json({ message: 'Project deleted' });
   } catch (error) {
     return NextResponse.json({ error: 'Delete failed' }, { status: 500 });
