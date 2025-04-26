@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
-// Removed invalid import
+type RouteParams<T extends Record<string, string>> = { params: T }; // Define a custom type
 
 // GET a project
-export async function GET(req: NextRequest, context: { params: { id: string } }) {
+export async function GET(req: NextRequest, context: RouteParams<{ id: string }>) {
   const { id } = context.params;
   const numericId = parseInt(id);
   if (isNaN(numericId)) return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
@@ -17,7 +17,7 @@ export async function GET(req: NextRequest, context: { params: { id: string } })
 }
 
 // PUT to update a project
-export async function PUT(req: NextRequest, context: { params: { id: string } }) {
+export async function PUT(req: NextRequest, context: RouteParams<{ id: string }>) {
   const id = parseInt(context.params.id);
   if (isNaN(id)) return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
 
@@ -41,7 +41,7 @@ export async function PUT(req: NextRequest, context: { params: { id: string } })
 }
 
 // DELETE a project
-export async function DELETE(req: NextRequest, context: { params: { id: string } }) {
+export async function DELETE(req: NextRequest, context: RouteParams<{ id: string }>) {
   const id = parseInt(context.params.id);
   if (isNaN(id)) return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
 
