@@ -29,7 +29,7 @@ export async function POST(request: Request) {
     }
 
     // Prepare email batch
-    const emailBatch = subscribers.map((subscriber) => ({
+    const emailBatch = subscribers.map((subscriber: { email: any; }) => ({
       from: 'Acme <onboarding@resend.dev', // Use your verified Resend sender
       to: [subscriber.email],
       subject,
