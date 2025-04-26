@@ -1,8 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 
+type Props = {
+  params: {
+    [x: string]: string;
+    provider: string
+  }
+}
+
 // GET a project
-export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
+export async function GET(req: NextRequest,  props: Props) {
+  const { params } = props;
   const id = parseInt(params.id);
   if (isNaN(id)) {
     return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
