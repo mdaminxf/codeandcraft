@@ -2,12 +2,12 @@ import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 
 // GET a project
-export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
-  const id = parseInt(params.id);
-  if (isNaN(id)) return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
-
-  try {
-    const project = await prisma.projects.findUnique({ where: { id } });
+export async function GET(req: NextRequest, context: { params: { id: string } }) {
+  const { id } = context.params;
+  const numericId = parseInt(id);
+  if (isNaN(numericId)) return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
+try{
+    const project = await prisma.projects.findUnique({ where: { id: numericId } });
     if (!project) return NextResponse.json({ error: 'Not found' }, { status: 404 });
     return NextResponse.json(project);
   } catch (error) {
