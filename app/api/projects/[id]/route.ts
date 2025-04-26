@@ -1,16 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 
-type Props = {
-  params: {
-    [x: string]: string;
-    provider: string
-  }
-}
-
 // GET a project
-export async function GET(req: NextRequest,  props: Props) {
-  const { params } = props;
+export async function GET(req: NextRequest, { params }: any) {
   const id = parseInt(params.id);
   if (isNaN(id)) {
     return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
@@ -28,8 +20,7 @@ export async function GET(req: NextRequest,  props: Props) {
 }
 
 // PUT to update a project
-export async function PUT(req: NextRequest, props: Props) {
-  const { params } = props;
+export async function PUT(req: NextRequest, { params }: any) {
   const id = parseInt(params.id);
   if (isNaN(id)) {
     return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
@@ -55,8 +46,7 @@ export async function PUT(req: NextRequest, props: Props) {
 }
 
 // DELETE a project
-export async function DELETE(req: NextRequest, props:Props) {
-  const { params } = props;
+export async function DELETE(req: NextRequest, { params }: any) {
   const id = parseInt(params.id);
   if (isNaN(id)) {
     return NextResponse.json({ error: 'Invalid ID' }, { status: 400 });
