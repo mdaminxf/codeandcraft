@@ -1,49 +1,15 @@
+'use client';
+
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const logos = [
-  {
-    name: "MongoDB",
-    url: "/mongodb.svg",
-    class: "border-green-600 bg-stone-200",
-    positionClass: "top-[20%] left-[5%] sm:top-[28%] sm:left-[10%] md:top-[25%] md:left-[15%] lg:top-[25%] lg:left-[18%]",
-    initialRotation: 5,
-  },
-  {
-    name: "PostgreSQL",
-    url: "/postsql.svg",
-    class: "border-indigo-600 bg-stone-200",
-    positionClass: "top-[65%] left-[40%] sm:top-[78%] sm:left-[42%] md:top-[72%] md:left-[45%] lg:top-[75%] lg:left-[48%]",
-    initialRotation: -10,
-  },
-  {
-    name: "MySQL",
-    url: "/mysql.svg",
-    class: "border-indigo-400 bg-stone-200",
-    positionClass: "top-[25%] left-[70%] sm:top-[28%] sm:left-[72%] md:top-[28%] md:left-[75%] lg:top-[25%] lg:left-[77%]",
-    initialRotation: -30,
-  },
-  {
-    name: "Next.js",
-    url: "/nextjs.svg",
-    class: "border-stone-200 bg-black",
-    positionClass: "top-[10%] left-[40%] sm:top-[15%] sm:left-[42%] md:top-[13%] md:left-[44%] lg:top-[13%] lg:left-[46%]",
-    initialRotation: -5,
-  },
-  {
-    name: "React",
-    url: "/react.svg",
-    class: "border-blue-200 bg-zinc-800",
-    positionClass: "top-[60%] left-[70%] sm:top-[58%] sm:left-[72%] md:top-[58%] md:left-[74%] lg:top-[60%] lg:left-[75%]",
-    initialRotation: 10,
-  },
-  {
-    name: "TailwindCss",
-    url: "/tailwindcss.svg",
-    class: "border-sky-300 bg-zinc-300",
-    positionClass: "top-[60%] left-[8%] sm:top-[62%] sm:left-[12%] md:top-[60%] md:left-[15%] lg:top-[65%] lg:left-[18%]",
-    initialRotation: 10,
-  },
+  { name: "MongoDB", url: "/mongodb.svg", class: "border-green-600 bg-stone-200", initialRotation: 5 },
+  { name: "PostgreSQL", url: "/postsql.svg", class: "border-indigo-600 bg-stone-200", initialRotation: -10 },
+  { name: "MySQL", url: "/mysql.svg", class: "border-indigo-400 bg-stone-200", initialRotation: -30 },
+  { name: "Next.js", url: "/nextjs.svg", class: "border-stone-200 bg-black", initialRotation: -5 },
+  { name: "React", url: "/react.svg", class: "border-blue-200 bg-zinc-800", initialRotation: 10 },
+  { name: "TailwindCss", url: "/tailwindcss.svg", class: "border-sky-300 bg-zinc-300", initialRotation: 10 },
 ];
 
 interface HeroSectionProps {
@@ -79,28 +45,28 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
 
   return (
     <section ref={refHero} className="relative w-full h-screen overflow-hidden bg-black">
-      {/* Animated grid background */}
+      {/* Background Grid */}
       <div className="absolute inset-0 animated-grid-bg z-0" />
 
       {/* Floating Logos */}
-      <div className="absolute inset-0 z-20 pointer-events-none">
+      <div className="absolute inset-0 flex flex-wrap items-center justify-center gap-8 p-6 sm:gap-12 md:gap-16 z-10 pointer-events-none">
         {logos.map((logo, index) => (
           <motion.img
             key={logo.name}
             src={logo.url}
             alt={logo.name}
-            className={`h-24 w-24 object-contain rounded-full p-4 border-3 bg-opacity-20 shadow-md backdrop-blur-md absolute ${logo.class} ${logo.positionClass}`}
+            className={`h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-full p-2 sm:p-3 border-2 sm:border-3 ${logo.class} bg-opacity-20 shadow-md backdrop-blur-md`}
             animate={{
-              y: [0, -25, 0],
+              y: [0, -20, 0],
               rotate: [
                 logo.initialRotation,
-                logo.initialRotation + 15,
-                logo.initialRotation - 15,
+                logo.initialRotation + 10,
+                logo.initialRotation - 10,
                 logo.initialRotation,
               ],
             }}
             transition={{
-              duration: 4 + index,
+              duration: 5 + index,
               repeat: Infinity,
               repeatType: "loop",
               ease: "easeInOut",
@@ -110,12 +76,11 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4 sm:px-0">
-        <h1 className="text-3xl sm:text-3xl font-extrabold drop-shadow-md">
+      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-6 sm:px-8">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-md">
           <span
             className={`transform transition-all duration-300 ${transform} ${color}
-             drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] 
-            underline underline-offset-1`}
+            drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] underline underline-offset-2`}
           >
             {text}
           </span>
@@ -124,11 +89,11 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
         <p className="mt-4 text-sm sm:text-lg text-white/80 max-w-2xl mx-auto drop-shadow-sm">
           From databases to frontends — we integrate cutting-edge technologies like MongoDB, React, PostgreSQL, and more to deliver scalable, high-performance solutions.
         </p>
-        <div className="space-x-4 mt-6">
+        <div className="mt-6">
           <button
             onClick={onScrollToProjects}
-            className="px-6 py-3 bg-gradient-to-r animate-gradient-x from-purple-500 via-zinc-400 to-indigo-500 text-zinc-800 cursor-pointer font-semibold rounded-md shadow 
-              hover:bg-purple-400 hover:text-stone-900 hover:scale-105 transition"
+            className="px-6 py-3 bg-gradient-to-r animate-gradient-x from-purple-500 via-zinc-400 to-indigo-500 text-black cursor-pointer font-semibold rounded-md shadow 
+              hover:bg-purple-400 hover:text-black hover:scale-105 transition"
           >
             View Projects
           </button>
