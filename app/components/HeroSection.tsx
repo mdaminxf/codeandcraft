@@ -51,25 +51,28 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
       {/* Floating Logos */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] z-10 pointer-events-none">
   {logos.map((logo, index) => {
-    const angle = (360 / logos.length) * index;
+    const radius = 140; // radius of circle
+    const angle = (360 / logos.length) * index - 90; // minus 90 to start at top
     const rad = (angle * Math.PI) / 180;
-    const x = Math.cos(rad) * 120; // radius
-    const y = Math.sin(rad) * 120; // radius
+    const x = Math.cos(rad) * radius;
+    const y = Math.sin(rad) * radius;
 
     return (
       <motion.img
         key={logo.name}
         src={logo.url}
         alt={logo.name}
-        className="absolute left-1/2 top-1/2 h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full p-2 border-2 bg-opacity-20 shadow-md backdrop-blur-md"
+        className="absolute h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full p-2 border-2 shadow-md backdrop-blur-md bg-white/20"
         style={{
-          transform: `translate(-50%, -50%) translate(${x}px, ${y}px)`,
+          left: `calc(50% + ${x}px)`,
+          top: `calc(50% + ${y}px)`,
+          transform: "translate(-50%, -50%)",
         }}
         animate={{
           rotate: [logo.initialRotation, logo.initialRotation + 10, logo.initialRotation - 10, logo.initialRotation],
         }}
         transition={{
-          duration: 5 + index,
+          duration: 4 + index,
           repeat: Infinity,
           repeatType: "loop",
           ease: "easeInOut",
