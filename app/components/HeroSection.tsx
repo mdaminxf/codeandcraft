@@ -49,31 +49,36 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
       <div className="absolute inset-0 animated-grid-bg z-0" />
 
       {/* Floating Logos */}
-      <div className="absolute inset-0 flex flex-wrap items-center justify-center gap-8 p-6 sm:gap-12 md:gap-16 z-10 pointer-events-none">
-        {logos.map((logo, index) => (
-          <motion.img
-            key={logo.name}
-            src={logo.url}
-            alt={logo.name}
-            className={`h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-full p-2 sm:p-3 border-2 sm:border-3 ${logo.class} bg-opacity-20 shadow-md backdrop-blur-md`}
-            animate={{
-              y: [0, -20, 0],
-              rotate: [
-                logo.initialRotation,
-                logo.initialRotation + 10,
-                logo.initialRotation - 10,
-                logo.initialRotation,
-              ],
-            }}
-            transition={{
-              duration: 5 + index,
-              repeat: Infinity,
-              repeatType: "loop",
-              ease: "easeInOut",
-            }}
-          />
-        ))}
-      </div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] z-10 pointer-events-none">
+  {logos.map((logo, index) => {
+    const angle = (360 / logos.length) * index;
+    const rad = (angle * Math.PI) / 180;
+    const x = Math.cos(rad) * 120; // radius
+    const y = Math.sin(rad) * 120; // radius
+
+    return (
+      <motion.img
+        key={logo.name}
+        src={logo.url}
+        alt={logo.name}
+        className="absolute left-1/2 top-1/2 h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full p-2 border-2 bg-opacity-20 shadow-md backdrop-blur-md"
+        style={{
+          transform: `translate(-50%, -50%) translate(${x}px, ${y}px)`,
+        }}
+        animate={{
+          rotate: [logo.initialRotation, logo.initialRotation + 10, logo.initialRotation - 10, logo.initialRotation],
+        }}
+        transition={{
+          duration: 5 + index,
+          repeat: Infinity,
+          repeatType: "loop",
+          ease: "easeInOut",
+        }}
+      />
+    );
+  })}
+</div>
+
 
       {/* Hero Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-6 sm:px-8">

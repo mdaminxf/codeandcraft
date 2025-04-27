@@ -116,7 +116,7 @@ if (!emailRegex.test(email)) {
             <button
         type="submit"
         disabled={mutation.isPending}
-        className="w-full px-6 py-2 bg-indigo-500 text-zinc-200 rounded-lg hover:bg-indigo-600 cursor-pointer transition"
+        className="w-full px-6 py-2 bg-indigo-500 text-zinc-200 rounded-lg hover:bg-indigo-600 sm:bg-indigo-500 cursor-pointer transition"
         >
         {mutation.isPending ? 'Sending...' : 'Send Message'}
       </button>
