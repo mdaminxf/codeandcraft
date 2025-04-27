@@ -74,7 +74,7 @@ if (!emailRegex.test(email)) {
         <h2 className="text-3xl font-bold text-zinc-700 mb-8 text-center underline underline-offset-3">
             <span className="text-4xl text-indigo-600">Contact </span>us
           </h2>
-          <form className="space-y-4 w-100" onSubmit={handleSubmit}>
+          <form className="space-y-4 w-full" onSubmit={handleSubmit}>
             <div>
               <input
                 type="text"
