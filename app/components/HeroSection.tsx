@@ -79,7 +79,7 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
       {/* Floating Logos (behind the text) */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] z-10 pointer-events-none">
         {logos.map((logo, index) => {
-          const radius = 140; // radius of circle
+          const radius = 220; // radius of circle
           const angle = (360 / logos.length) * index - 90; // minus 90 to start at top
           const rad = (angle * Math.PI) / 180;
           const x = Math.cos(rad) * radius;
@@ -90,10 +90,10 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
               key={logo.name}
               src={logo.url}
               alt={logo.name}
-              className="absolute h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full p-2 border-2 shadow-md backdrop-blur-md bg-white/20"
+              className="absolute h-20 w-20 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full p-2 border-2 shadow-md backdrop-blur-md bg-white/20"
               style={{
                 left: `calc(42% + ${x}px)`,
-                top: `calc(44% + ${y}px)`,
+                top: `calc(39% + ${y}px)`,
                 transform: "translate(-50%, -50%)",
               }}
               animate={{
@@ -120,7 +120,8 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
           >
             {text}
           </span>
-          ing Innovation with Modern Tech
+          <br />
+          Your Web with Modern Tech
         </h1>
         <p className="mt-4 text-sm sm:text-lg text-white/80 max-w-2xl mx-auto drop-shadow-sm">
           From databases to frontends — we integrate cutting-edge technologies like MongoDB, React, PostgreSQL, and more to deliver scalable, high-performance solutions.
