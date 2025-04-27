@@ -35,7 +35,7 @@ const logos = [
   {
     name: "TailwindCss",
     url: "/tailwindcss.svg",
-    class: "border-sky-500 bg-zinc-300 p-1",
+    class: "border-sky-500 bg-zinc-200 p-1",
     initialRotation: 10,
   },
 ];
@@ -58,6 +58,31 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
     { text: "PoWeR", color: "text-green-800", transform: "capitalize" },
     { text: "power", color: "text-purple-600", transform: "capitalize" },
   ];
+  const [radius, setRadius] = useState(200); // Default radius
+
+  useEffect(() => {
+    // Calculate the radius dynamically based on screen width
+    const updateRadius = () => {
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth < 640) {
+        setRadius(150); // For small screens (mobile)
+      } else if (screenWidth >= 640 && screenWidth < 1024) {
+        setRadius(190); // For medium screens (tablets)
+      } else {
+        setRadius(210); // For large screens (desktops)
+      }
+    };
+
+    // Set radius on mount
+    updateRadius();
+
+    // Update radius on window resize
+    window.addEventListener("resize", updateRadius);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener("resize", updateRadius);
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -79,18 +104,17 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
       {/* Floating Logos (behind the text) */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] z-10 pointer-events-none">
         {logos.map((logo, index) => {
-          const radius = 200; // radius of circle
-          const angle = (360 / logos.length) * index - 90; // minus 90 to start at top
-          const rad = (angle * Math.PI) / 180;
-          const x = Math.cos(rad) * radius;
-          const y = Math.sin(rad) * radius;
+                const angle = (360 / logos.length) * index - 90; // minus 90 to start at top
+                const rad = (angle * Math.PI) / 180;
+                const x = Math.cos(rad) * radius;
+                const y = Math.sin(rad) * radius;
 
           return (
             <motion.img
               key={logo.name}
               src={logo.url}
               alt={logo.name}
-              className={`absolute h-20 w-20 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full border-2  
+              className={`absolute h-16 w-16 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full border-2  
                 ${logo.class}
                 `}
               style={{
