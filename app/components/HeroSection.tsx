@@ -20,7 +20,7 @@ const logos = [
     name: "MySQL",
     url: "/mysql.svg",
     class: "border-indigo-400 bg-stone-200",
-    positionClass: "top-[20%] left-[75%] lg:left-[75%] sm:left-[75%] md:left-[80%]",
+    positionClass: "top-[20%] left-[75%] lg:left-[75%] sm:left-[70%] md:left-[80%]",
     initialRotation: -30,
   },
   {
