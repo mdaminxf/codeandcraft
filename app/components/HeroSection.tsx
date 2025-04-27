@@ -3,39 +3,39 @@ import { useEffect, useState } from "react";
 
 const logos = [
   {
-    name: "MongoDB",
-    url: "/mongodb.svg",
-    class: "border-green-600 bg-stone-200",
-    initialRotation: 5,
-  },
-  {
-    name: "PostgreSQL",
-    url: "/postsql.svg",
-    class: "border-indigo-600 bg-stone-200",
-    initialRotation: -10,
-  },
-  {
-    name: "MySQL",
-    url: "/mysql.svg",
-    class: "border-indigo-400 bg-stone-200",
-    initialRotation: -30,
-  },
-  {
     name: "Next.js",
     url: "/nextjs.svg",
     class: "border-stone-200 bg-black",
     initialRotation: -5,
   },
   {
+    name: "MongoDB",
+    url: "/mongodb.svg",
+    class: "border-green-600 bg-stone-200 p-1",
+    initialRotation: 5,
+  },
+  {
+    name: "PostgreSQL",
+    url: "/postsql.svg",
+    class: "border-indigo-600 bg-stone-200 p-1",
+    initialRotation: -10,
+  },
+  {
+    name: "MySQL",
+    url: "/mysql.svg",
+    class: "border-indigo-400 bg-gray-200 p-1",
+    initialRotation: -30,
+  },
+  {
     name: "React",
     url: "/react.svg",
-    class: "border-blue-200 bg-zinc-800",
+    class: "border-sky-300 bg-zinc-700 p-1",
     initialRotation: 10,
   },
   {
     name: "TailwindCss",
     url: "/tailwindcss.svg",
-    class: "border-sky-300 bg-zinc-300",
+    class: "border-sky-500 bg-zinc-300 p-1",
     initialRotation: 10,
   },
 ];
@@ -79,7 +79,7 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
       {/* Floating Logos (behind the text) */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] z-10 pointer-events-none">
         {logos.map((logo, index) => {
-          const radius = 220; // radius of circle
+          const radius = 200; // radius of circle
           const angle = (360 / logos.length) * index - 90; // minus 90 to start at top
           const rad = (angle * Math.PI) / 180;
           const x = Math.cos(rad) * radius;
@@ -90,10 +90,12 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
               key={logo.name}
               src={logo.url}
               alt={logo.name}
-              className="absolute h-20 w-20 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full p-2 border-2 shadow-md backdrop-blur-md bg-white/20"
+              className={`absolute h-20 w-20 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full border-2  
+                ${logo.class}
+                `}
               style={{
                 left: `calc(42% + ${x}px)`,
-                top: `calc(39% + ${y}px)`,
+                top: `calc(38% + ${y}px)`,
                 transform: "translate(-50%, -50%)",
               }}
               animate={{
