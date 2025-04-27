@@ -20,7 +20,7 @@ const logos = [
     name: "MySQL",
     url: "/mysql.svg",
     class: "border-indigo-400 bg-stone-200",
-    positionClass: "top-[20%] left-[77%] lg:left-[75%] sm:left-[75%] md:left-[80%]",
+    positionClass: "top-[20%] left-[75%] lg:left-[75%] sm:left-[75%] md:left-[80%]",
     initialRotation: -30,
   },
   {
@@ -34,7 +34,7 @@ const logos = [
     name: "React",
     url: "/react.svg",
     class: "border-blue-200 bg-zinc-800",
-    positionClass: "top-[65%] left-[75%] lg:top-[] lg:left-[] sm:top-[60%] sm:left-[70%] md:top-[58%] md:left-[75%]",
+    positionClass: "top-[65%] left-[75%] sm:top-[60%] sm:left-[70%] md:top-[58%] md:left-[75%]",
     initialRotation: 10,
   },
   {
