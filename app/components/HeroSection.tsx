@@ -46,27 +46,26 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
   return (
     <section ref={refHero} className="relative w-full h-screen overflow-hidden bg-black">
       {/* Background Grid */}
-      <div className="absolute inset-0 animated-grid-bg z-0" />
+      <div className="absolute inset-1 animated-grid-bg z-0" />
 
       {/* Floating Logos */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] z-10 pointer-events-none">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full sm:w-[60%] sm:h-[60%] md:w-[50%] md:h-[50%] z-10 pointer-events-none">
   {logos.map((logo, index) => {
-    const radius = 140; // radius of circle
+    const radius = 160; // radius of circle
     const angle = (360 / logos.length) * index - 90; // minus 90 to start at top
-    const rad = (angle * Math.PI) / 180;
+    const rad = (angle * Math.PI ) /180;
     const x = Math.cos(rad) * radius;
-    const y = Math.sin(rad) * radius;
+    const y = Math.sin(rad) * radius ;
 
     return (
       <motion.img
         key={logo.name}
         src={logo.url}
         alt={logo.name}
-        className="absolute h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full p-2 border-2 shadow-md backdrop-blur-md bg-white/20"
+        className="absolute h-16 w-16 sm:h-16 p-2 sm:w-16 md:h-20 md:w-20 rounded-full border-2 shadow-md backdrop-blur-md "
         style={{
-          left: `calc(50% + ${x}px)`,
-          top: `calc(50% + ${y}px)`,
-          transform: "translate(-50%, -50%)",
+          left: `calc(44% + ${x}px)`,
+          top: `calc(44+ ${y}px)`,
         }}
         animate={{
           rotate: [logo.initialRotation, logo.initialRotation + 10, logo.initialRotation - 10, logo.initialRotation],
