@@ -69,7 +69,7 @@ if (!emailRegex.test(email)) {
     return(
       <section
         ref={refContact}
-        className="flex flex-col justify-center items-center bg-gray-100 py-10 sm:px-7"
+        className="flex flex-col justify-center items-center bg-gray-100 p-7 "
       >
         <h2 className="text-3xl font-bold text-zinc-700 mb-8 text-center underline underline-offset-3">
             <span className="text-4xl text-indigo-600">Contact </span>us
