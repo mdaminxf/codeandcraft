@@ -13,7 +13,7 @@ const logos = [
     name: "PostgreSQL",
     url: "/postsql.svg",
     class: "border-indigo-600 bg-stone-200",
-    positionClass: "top-[65%] left-[40%] sm:top-[75%] sm:left-[42%] md:top-[72%] md:left-[45%] lg:top-[75%] lg:left-[48%]",
+    positionClass: "top-[65%] left-[40%] sm:top-[78%] sm:left-[42%] md:top-[72%] md:left-[45%] lg:top-[75%] lg:left-[48%]",
     initialRotation: -10,
   },
   {
