@@ -43,9 +43,8 @@ export default function NewsLetter ()
    animate={{ opacity: 1, y: 0 }}
    transition={{ duration: 1 }}
      >
-   <h2 className="text-3xl text-stone-300 font-bold mb-2 underline underline-offset-3">
-   subscribe 
-    <span className="text-stone-100 text-4xl"> Newsletter</span> </h2>
+   <h2 className="text-stone-300 font-bold mb-2 underline underline-offset-3">
+    <span className="text-stone-100 text-3xl"> Newsletter</span> </h2>
    <p className="mb-8">
      Stay updated with the latest projects and news. Subscribe now!
    </p>
