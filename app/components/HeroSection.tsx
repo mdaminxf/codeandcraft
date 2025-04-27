@@ -49,6 +49,7 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
   const [text, setText] = useState("Power");
   const [color, setColor] = useState("text-cyan-400");
   const [transform, setTransform] = useState("none");
+  const [radius, setRadius] = useState(200); // Default radius
 
   const textVariants = [
     { text: "Power", color: "text-cyan-700", transform: "none" },
@@ -58,14 +59,14 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
     { text: "PoWeR", color: "text-green-800", transform: "capitalize" },
     { text: "power", color: "text-purple-600", transform: "capitalize" },
   ];
-  const [radius, setRadius] = useState(200); // Default radius
 
   useEffect(() => {
     // Calculate the radius dynamically based on screen width
     const updateRadius = () => {
       const screenWidth = window.innerWidth;
-
-      if (screenWidth < 640) {
+      if (screenWidth < 350) {
+        setRadius(100);
+      } else if (screenWidth >= 350 && screenWidth < 640) {
         setRadius(150); // For small screens (mobile)
       } else if (screenWidth >= 640 && screenWidth < 1024) {
         setRadius(190); // For medium screens (tablets)
@@ -102,24 +103,22 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
       <div className="absolute inset-0 animated-grid-bg z-0" />
 
       {/* Floating Logos (behind the text) */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px] z-10 pointer-events-none">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px]">
         {logos.map((logo, index) => {
-                const angle = (360 / logos.length) * index - 90; // minus 90 to start at top
-                const rad = (angle * Math.PI) / 180;
-                const x = Math.cos(rad) * radius;
-                const y = Math.sin(rad) * radius;
+          const angle = (360 / logos.length) * index - 90; // minus 90 to start at top
+          const rad = (angle * Math.PI) / 180;
+          const x = Math.cos(rad) * radius;
+          const y = Math.sin(rad) * radius;
 
           return (
             <motion.img
               key={logo.name}
               src={logo.url}
               alt={logo.name}
-              className={`absolute h-16 w-16 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full border-2  
-                ${logo.class}
-                `}
+              className={`absolute h-16 w-16 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full border-2 ${logo.class}`}
               style={{
-                left: `calc(42% + ${x}px)`,
-                top: `calc(38% + ${y}px)`,
+                left: `calc(39% + ${x}px)`,
+                top: `calc(40% + ${y}px)`,
                 transform: "translate(-50%, -50%)",
               }}
               animate={{
@@ -141,18 +140,17 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
       style={{
         textShadow: `2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000`, // Adjust border thickness and color here
       }}>
-      <h1 className="text-3xl sm:text-3xl text-gray-200/100 font-extrabold drop-shadow-md"
+        <h1 className="text-3xl sm:text-3xl text-gray-200/100 font-extrabold drop-shadow-md">
+          <span
+            className={`transform transition-all duration-300 ${transform} ${color} 
+            drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] 
+            underline underline-offset-1`}
           >
-  <span
-    className={`transform transition-all duration-300 ${transform} ${color} 
-    drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] 
-    underline underline-offset-1`}
-  >
-    {text}
-  </span>
-  <br />
-  Your Web with Modern Tech
-</h1>
+            {text}
+          </span>
+          <br />
+          Your Web with Modern Tech
+        </h1>
 
         <p className="mt-4 text-sm sm:text-lg text-white/90 max-w-2xl mx-auto drop-shadow-sm">
           From databases to frontends — we integrate cutting-edge technologies and more to deliver scalable, high-performance solutions.
