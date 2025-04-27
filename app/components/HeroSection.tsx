@@ -92,8 +92,8 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
               alt={logo.name}
               className="absolute h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 rounded-full p-2 border-2 shadow-md backdrop-blur-md bg-white/20"
               style={{
-                left: `calc(50% + ${x}px)`,
-                top: `calc(50% + ${y}px)`,
+                left: `calc(44% + ${x}px)`,
+                top: `calc(44% + ${y}px)`,
                 transform: "translate(-50%, -50%)",
               }}
               animate={{
