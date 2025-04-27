@@ -6,14 +6,14 @@ const logos = [
     name: "MongoDB",
     url: "/mongodb.svg",
     class: "border-green-600 bg-stone-200",
-    positionClass: "top-[20%] left-[5%] sm:top-[25%] sm:left-[10%] md:top-[25%] md:left-[15%] lg:top-[25%] lg:left-[18%]",
+    positionClass: "top-[20%] left-[5%] sm:top-[28%] sm:left-[10%] md:top-[25%] md:left-[15%] lg:top-[25%] lg:left-[18%]",
     initialRotation: 5,
   },
   {
     name: "PostgreSQL",
     url: "/postsql.svg",
     class: "border-indigo-600 bg-stone-200",
-    positionClass: "top-[65%] left-[40%] sm:top-[70%] sm:left-[42%] md:top-[72%] md:left-[45%] lg:top-[75%] lg:left-[48%]",
+    positionClass: "top-[65%] left-[40%] sm:top-[75%] sm:left-[42%] md:top-[72%] md:left-[45%] lg:top-[75%] lg:left-[48%]",
     initialRotation: -10,
   },
   {
@@ -27,7 +27,7 @@ const logos = [
     name: "Next.js",
     url: "/nextjs.svg",
     class: "border-stone-200 bg-black",
-    positionClass: "top-[10%] left-[40%] sm:top-[12%] sm:left-[42%] md:top-[13%] md:left-[44%] lg:top-[13%] lg:left-[46%]",
+    positionClass: "top-[10%] left-[40%] sm:top-[15%] sm:left-[42%] md:top-[13%] md:left-[44%] lg:top-[13%] lg:left-[46%]",
     initialRotation: -5,
   },
   {
