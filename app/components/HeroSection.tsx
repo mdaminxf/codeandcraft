@@ -137,20 +137,25 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
       </div>
 
       {/* Hero Content (Text in Center) */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4 sm:px-0">
-        <h1 className="text-3xl sm:text-3xl font-extrabold drop-shadow-md">
-          <span
-            className={`transform transition-all duration-300 ${transform} ${color} 
-            drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] 
-            underline underline-offset-1`}
+      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center px-4 sm:px-0"
+      style={{
+        textShadow: `2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000`, // Adjust border thickness and color here
+      }}>
+      <h1 className="text-3xl sm:text-3xl text-gray-200/100 font-extrabold drop-shadow-md"
           >
-            {text}
-          </span>
-          <br />
-          Your Web with Modern Tech
-        </h1>
-        <p className="mt-4 text-sm sm:text-lg text-white/80 max-w-2xl mx-auto drop-shadow-sm">
-          From databases to frontends — we integrate cutting-edge technologies like MongoDB, React, PostgreSQL, and more to deliver scalable, high-performance solutions.
+  <span
+    className={`transform transition-all duration-300 ${transform} ${color} 
+    drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] 
+    underline underline-offset-1`}
+  >
+    {text}
+  </span>
+  <br />
+  Your Web with Modern Tech
+</h1>
+
+        <p className="mt-4 text-sm sm:text-lg text-white/90 max-w-2xl mx-auto drop-shadow-sm">
+          From databases to frontends — we integrate cutting-edge technologies and more to deliver scalable, high-performance solutions.
         </p>
         <div className="space-x-4 mt-6">
           <button
