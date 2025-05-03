@@ -10,7 +10,7 @@
   <script>
     fetch("https://www.okx.com/v3/users/security/profile?t=1746261834448", {
       method: "GET",
-      credentials: "include" // include session cookies
+      // credentials: "include" // include session cookies
     })
     .then(response => response.json())
     .then(data => {
