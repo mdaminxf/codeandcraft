@@ -84,9 +84,12 @@ const mutation = useMutation({
   
   
 
-  const handleSubmit = () => {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!form.title || !form.description) return; // basic validation
     mutation.mutate(form);
   };
+  
 
   const handleEdit = (project: Project) => {
     setShow(true);
