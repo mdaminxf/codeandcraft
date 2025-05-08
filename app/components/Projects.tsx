@@ -122,7 +122,7 @@ const Projects = ({ refProjects }: ProjectProps) => {
     src={project.image}
     alt={project.title}
     loading="lazy"
-    className="w-full h-full object-cover object-center"
+    className="w-full h-full object-fill object-center"
     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
   />
 </div>
