@@ -111,7 +111,7 @@ const Projects = ({ refProjects }: ProjectProps) => {
         <h2 className="text-3xl font-bold text-gray-700 text-center mb-10 underline underline-offset-3">
           <span className="text-purple-600 text-4xl">My</span> projects
         </h2>
-<div className="flex gap-x-2">
+<div className="flex">
 
         {currentProjects.length > 0 ? currentProjects.map((project) => (
   <div key={project.id} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
