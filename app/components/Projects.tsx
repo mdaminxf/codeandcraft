@@ -102,7 +102,7 @@ const Projects = ({ refProjects }: ProjectProps) => {
   return (
     <section ref={refProjects} className="py-10 bg-zinc-100" id="projects">
       <motion.div
-        className="container mx-auto px-8"
+        className="container mx-auto px-8 flex"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -111,7 +111,6 @@ const Projects = ({ refProjects }: ProjectProps) => {
         <h2 className="text-3xl font-bold text-gray-700 text-center mb-10 underline underline-offset-3">
           <span className="text-purple-600 text-4xl">My</span> projects
         </h2>
-<div className="flex">
 
         {currentProjects.length > 0 ? currentProjects.map((project) => (
   <div key={project.id} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -162,7 +161,6 @@ const Projects = ({ refProjects }: ProjectProps) => {
     NO Data Found {' :('}
   </p>
 )}
-</div>
 
 
         {projects.length > projectsPerPage && (
