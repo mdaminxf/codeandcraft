@@ -133,7 +133,7 @@ const Projects = ({ refProjects }: ProjectProps) => {
           <span className="flex">
             <FiLink2 className="m-1 text-purple-500" />
             <a
-              href={'https://' + project.link}
+              href={project.link}
               target="_blank"
               rel="noopener noreferrer"
               className="text-purple-500 underline underline-offset-2"
