@@ -117,15 +117,16 @@ const Projects = ({ refProjects }: ProjectProps) => {
       key={project.id}
       className="bg-zinc-300 shadow-xl rounded-xl shadow-md p-4 flex flex-col"
     >
-      <div className="relative h-48">
-        <img
-          src={project.image}
-          alt={project.title}
-          loading="lazy"
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </div>
+     <div className="w-full aspect-video overflow-hidden rounded-md bg-gray-200">
+  <img
+    src={project.image}
+    alt={project.title}
+    loading="lazy"
+    className="w-full h-full object-cover object-center"
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+  />
+</div>
+
       <div className="p-6">
         <h3 className="flex w-full flex-1 justify-between items-center text-xl font-bold text-gray-900 mb-2">
           {project.title}
