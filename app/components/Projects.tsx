@@ -113,7 +113,7 @@ const Projects = ({ refProjects }: ProjectProps) => {
         </h2>
 
         {currentProjects.length > 0 ? currentProjects.map((project) => (
-  <div key={project.id} className="flex flex-cols-1 sm:flex-cols-2 lg:flex-cols-3 gap-8">
+  <div key={project.id} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
     <motion.div
       key={project.id} // This is the unique key for the outer container
       className="bg-zinc-300 shadow-xl rounded-xl shadow-md p-4 flex flex-col"
