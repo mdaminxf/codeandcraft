@@ -111,11 +111,10 @@ const Projects = ({ refProjects }: ProjectProps) => {
         <h2 className="text-3xl font-bold text-gray-700 text-center mb-10 underline underline-offset-3">
           <span className="text-purple-600 text-4xl">My</span> projects
         </h2>
-
-        {currentProjects.length > 0 ? currentProjects.map((project) => (
-  <div key={project.id} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+  {currentProjects.length>0 ? currentProjects.map((project) => (
     <motion.div
-      key={project.id} // This is the unique key for the outer container
+      key={project.id}
       className="bg-zinc-300 shadow-xl rounded-xl shadow-md p-4 flex flex-col"
     >
       <div className="relative h-48">
@@ -155,12 +154,12 @@ const Projects = ({ refProjects }: ProjectProps) => {
         </div>
       </div>
     </motion.div>
-  </div>
 )) : (
   <p className="text-md font-bold text-zinc-500 text-center mb-10">
     NO Data Found {' :('}
   </p>
 )}
+</div>
 
 
         {projects.length > projectsPerPage && (
