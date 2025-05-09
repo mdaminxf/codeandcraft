@@ -103,7 +103,7 @@ const HeroSection = ({ refHero, onScrollToProjects }: HeroSectionProps) => {
       <div className="absolute inset-0 animated-grid-bg z-0" />
 
       {/* Floating Logos (behind the text) */}
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px]">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] ">
         {logos.map((logo, index) => {
           const angle = (360 / logos.length) * index - 90; // minus 90 to start at top
           const rad = (angle * Math.PI) / 180;
