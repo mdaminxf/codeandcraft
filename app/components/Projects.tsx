@@ -119,7 +119,7 @@ const Projects = ({ refProjects }: ProjectProps) => {
       className="bg-zinc-300 shadow-xl rounded-xl shadow-md p-4 flex flex-col"
     >
      <div className="w-full aspect-video overflow-hidden rounded-md bg-gray-200">
-  <img
+  <Image
     src={project.image}
     alt={project.title}
     loading="lazy"
