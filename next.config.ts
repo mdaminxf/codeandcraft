@@ -14,8 +14,12 @@ const nextConfig: NextConfig = {
             protocol:'https',
             hostname: 'i.pravatar.cc',
             pathname: '/**'
+          },
+          {
+            protocol:'https',
+            hostname: 'codeandcraft-six.vercel.app',
+            pathname: '/**'
           }
-        
       ],
     },
 };

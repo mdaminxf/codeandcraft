@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Code & Craft",
+  title: "Code & Craft: Crafting Beautiful, High-Performance Websites",
   description: "Welcome to my web development portfolio! I specialize in building dynamic, responsive, and user-friendly websites using Modern Tech",
   keywords: "web development, Next.js, React, MongoDB, portfolio, JavaScript, front-end, back-end"
 };

@@ -120,7 +120,7 @@ const Projects = ({ refProjects }: ProjectProps) => {
     >
      <div className="w-full aspect-video overflow-hidden rounded-md bg-gray-200">
   <Image
-    src={'/'+project.image}
+    src={project.image}
     alt={project.title}
     loading="lazy"
     className="w-full h-full object-fill object-center"
