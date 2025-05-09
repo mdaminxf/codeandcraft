@@ -12,6 +12,7 @@ import HeroSection from "./components/HeroSection";
 import Testimonial from "./components/Testimoneal";
 import AboutUs from "./components/Aboutus";
 import Head from "next/head";
+import QandA from "./components/QandA";
 
 export default function Home() {
   // Refs for scroll and animations
@@ -68,6 +69,7 @@ export default function Home() {
       />
       {/* <Testimonial /> */}
       <NewsLetter />
+      <QandA />
       <ContactUs contactControls={contactControls} refContact={refContact} />
       <Footer />
     </div>
