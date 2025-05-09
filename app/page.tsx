@@ -11,6 +11,7 @@ import Projects from "./components/Projects";
 import HeroSection from "./components/HeroSection";
 import Testimonial from "./components/Testimoneal";
 import AboutUs from "./components/Aboutus";
+import Head from "next/head";
 
 export default function Home() {
   // Refs for scroll and animations
@@ -39,6 +40,20 @@ export default function Home() {
   }, [inViewHero, inViewProjects, inViewContact]);
 
   return (
+    <>
+    <Head>
+        <title>Muhammad Amin | Web Developer Portfolio</title>
+        <meta name="description" content="Web developer portfolio showcasing responsive websites, React apps, and creative frontend design." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Muhammad Amin" />
+        <meta property="og:title" content="Muhammad Amin | Web Developer" />
+        <meta property="og:description" content="See my projects, skills, and get in touch for freelance or full-time work." />
+        <meta property="og:image" content="/thumbnail.png" />
+        <meta property="og:url" content="https://codeandcraft-six.vercel.app/" />
+      </Head>
+      {/* rest of your code */}
+
+
     <div className="min-h-screen flex flex-col">
       {/* Hero Section with scroll button */}
       <HeroSection refHero={refHero} onScrollToProjects={scrollToProjects} />
@@ -56,5 +71,6 @@ export default function Home() {
       <ContactUs contactControls={contactControls} refContact={refContact} />
       <Footer />
     </div>
+    </>
   );
 }
