@@ -1,0 +1,195 @@
+[
+  {
+    "id": "post12",
+    "userId": "user11",
+    "caption": "Breaking down Ethereum's latest upgrade! Here's what every investor should know.",
+    "type": "analysis",
+    "title": "Ethereum Shanghai Upgrade Deep Dive",
+    "description": "An in-depth explanation of Ethereum's Shanghai upgrade, its technical implications, and investor takeaways.",
+    "images": ["https://th.bing.com/th/id/OIP.Ei1rYbv2QNAJzRc15WNC8QHaFV?w=250&h=180"],
+    "createdAt": "2025-07-20T07:15:00Z",
+    "isPrivate": true,
+    "price": 25,
+    "expiresAt": "1753200000000",
+    "likes": 102,
+    "comments": 4,
+    "shares": 3,
+    "messages": [
+      { "id": "m1", "sender": "user1", "text": "Welcome to my trade analysis!", "time": "10:30 AM" },
+      { "id": "m2", "sender": "user2", "text": "Thanks! Looking forward to it.", "time": "10:32 AM" }
+    ]
+  },
+  {
+    "id": "post122",
+    "userId": "user11",
+    "caption": "Breaking down Bitcoin latest upgrade! Here's what every investor should know.",
+    "type": "post",
+    "title": "Ethereum Shanghai Upgrade Deep Dive",
+    "description": "An in-depth explanation of Ethereum's Shanghai upgrade, its technical implications, and investor takeaways.",
+    "images": ["https://th.bing.com/th/id/OIP.DEpGlsgQlVz_nuonqz1xEQHaEw?w=286&h=187&c=7&r=0&o=7&pid=1.7&rm=3"],
+    "createdAt": "2025-07-20T07:15:00Z",
+    "isPrivate": false,
+    "price": "",
+    "expiresAt": "",
+    "likes": 102,
+    "comments": 4,
+    "shares": 3,
+    "messages": [
+      { "id": "m1", "sender": "user1", "text": "Welcome to my trade analysis!", "time": "10:30 AM" },
+      { "id": "m2", "sender": "user2", "text": "Thanks! Looking forward to it.", "time": "10:32 AM" }
+    ]
+  },
+  {
+    "id": "post1",
+    "userId": "user3",
+    "title": "Market Overview – Tech Stocks",
+    "caption": "Apple and Nvidia are heading into a major week. Here’s why...",
+    "description": "Weekly overview of major tech stocks, their performance drivers, and upcoming catalysts.",
+    "images": ["https://th.bing.com/th/id/OIP.Ei1rYbv2QNAJzRc15WNC8QHaFV?w=250&h=180"],
+    "type": "analysis",
+    "price": "10",
+    "expiresAt": "1753200000000",
+    "likes": 12,
+    "messages": [
+      { "id": "m1", "sender": "user1", "text": "Welcome to my trade analysis!", "time": "10:30 AM" },
+      { "id": "m2", "sender": "user2", "text": "Thanks! Looking forward to it.", "time": "10:32 AM" }
+    ],
+    "shares": 2
+  },
+  {
+    "id": "post2",
+    "userId": "user3",
+    "title": "Free Tip – Crypto in Q3",
+    "caption": "Crypto might get volatile. A free tip on managing your BTC hold.",
+    "description": "Share a no-cost tip on how to hedge your Bitcoin holdings during possible Q3 volatility.",
+    "images": [
+      "https://th.bing.com/th/id/OIP.4HLpKMElENltqHyT0EGEswHaGo?w=249&h=220",
+      "https://th.bing.com/th/id/OIP.vZtsysL6B7UwbRfcoYR_pwHaGo?w=249&h=220"
+    ],
+    "type": "post",
+    "price": 0,
+    "expiresAt": null,
+    "likes": 34,
+    "messages": [
+      { "id": "m3", "sender": "user3", "text": "Great insight!", "time": "12:30 PM" },
+      { "id": "m4", "sender": "user1", "text": "Thanks!", "time": "12:32 PM" }
+    ],
+    "comments": 2,
+    "shares": 6
+  },
+  {
+    "id": "post3",
+    "userId": "user13",
+    "title": "Trading Recap – July Week 3",
+    "caption": "Closed 4 green trades with 6.4% net profit. Here’s the breakdown.",
+    "description": "A summary of four successful trades executed in mid-July, including P/L and trade rationale.",
+    "images": ["https://tse1.mm.bing.net/th/id/OIP.Lqi5HMSwSHA8ayM36-BZQQHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain&o=7&rm=3"],
+    "type": "trade",
+    "price": 10,
+    "expiresAt": null,
+    "likes": 18,
+    "messages": [
+      { "id": "m5", "sender": "user4", "text": "Awesome!", "time": "9:12 AM" },
+      { "id": "m6", "sender": "user5", "text": "Well done!", "time": "9:15 AM" }
+    ],
+    "comments": 4,
+    "shares": 5
+  },
+  {
+    "id": "post4",
+    "userId": "user14",
+    "title": "Weekly Forex Forecast",
+    "caption": "EUR/USD nearing resistance. Watch for reversal signals.",
+    "description": "Forecast on EUR/USD with expected resistance levels and suggested trading setups.",
+    "images": ["https://th.bing.com/th/id/OIP.vZtsysL6B7UwbRfcoYR_pwHaGo?w=249&h=220"],
+    "type": "analysis",
+    "price": 15,
+    "expiresAt": 1753200000000,
+    "likes": 9,
+    "messages": [
+      { "id": "m7", "sender": "user6", "text": "Interesting zone!", "time": "8:45 AM" }
+    ],
+    "comments": 1,
+    "shares": 1
+  },
+  {
+    "id": "post5",
+    "userId": "user15",
+    "title": "ETH Swing Setup",
+    "caption": "Ethereum forming an ascending triangle on 4H chart. Entry inside!",
+    "description": "Technical setup for Ethereum swing trade. Entry zones, stop-loss, and target price included.",
+    "images": ["https://tse1.mm.bing.net/th/id/OIP.ofo0ZoPakGF0kMCdHG9XKwHaDd?rs=1&pid=ImgDetMain&o=7&rm=3"],
+    "type": "analysis",
+    "price": 8,
+    "expiresAt": 1753050000000,
+    "likes": 20,
+    "messages": [],
+    "comments": 3,
+    "shares": 4
+  },
+  {
+    "id": "post6",
+    "userId": "user17",
+    "title": "Quick Win – SPX500 1.2%",
+    "caption": "Closed in 3 hours. High conviction scalp.",
+    "description": "Scalping strategy nailed on SPX500, netting a quick 1.2% profit within hours.",
+    "images": ["https://tse4.mm.bing.net/th/id/OIP.PLClS0zzGs_DCL4csI98sAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"],
+    "type": "trade",
+    "price": 10,
+    "expiresAt": null,
+    "likes": 40,
+    "messages": [
+      { "id": "m8", "sender": "user9", "text": "Fire call!", "time": "2:10 PM" }
+    ],
+    "comments": 5,
+    "shares": 7
+  },
+  {
+    "id": "post7",
+    "userId": "user13",
+    "title": "Options Strategy – Iron Condor",
+    "caption": "Explained with risk/reward and entry timing. Long-term viable.",
+    "description": "Step-by-step Iron Condor strategy with clear R/R and timing for options traders.",
+    "images": ["https://tse1.mm.bing.net/th/id/OIP.jRkYpkTyIXnLIvINdQHT9gHaEX?w=932&h=550&rs=1&pid=ImgDetMain&o=7&rm=3"],
+    "type": "analysis",
+    "price": 12,
+    "expiresAt": 1755000000000,
+    "likes": 6,
+    "messages": [],
+    "comments": 1,
+    "shares": 2
+  },
+  {
+    "id": "post8",
+    "userId": "user18",
+    "title": "Client Portfolio Summary – Week 28",
+    "caption": "Total +3.1% return. Allocation chart attached.",
+    "description": "Weekly portfolio performance summary showing a 3.1% gain across diversified positions.",
+    "images": ["https://s3.tradingview.com/7/75tuAJXA_mid.png"],
+    "type": "post",
+    "price": 0,
+    "expiresAt": null,
+    "likes": 22,
+    "messages": [],
+    "comments": 2,
+    "shares": 3
+  },
+  {
+    "id": "post9",
+    "userId": "user17",
+    "title": "Gold Analysis – Breakout?",
+    "caption": "XAU/USD breaking key resistance zone. High alert.",
+    "description": "Analysis of XAU/USD chart showing a potential breakout of a key resistance level.",
+    "images": ["https://tse1.mm.bing.net/th/id/OIP.iVw0S0yVDpbIUlY9zOn2XgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "https://miro.medium.com/max/1200/1*jP2w3vQ0XHsZSp01IA3zOg.png"],
+    "type": "post",
+    "price": 0,
+    "expiresAt": null,
+    "likes": 14,
+    "messages": [
+      { "id": "m9", "sender": "user40", "text": "Thanks for this!", "time": "6:20 PM" }
+    ],
+    "comments": 1,
+    "shares": 2
+  }
+]

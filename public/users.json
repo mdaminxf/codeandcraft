@@ -1,0 +1,886 @@
+[
+  {
+    "id": "user1",
+    "name": "Amelia Rodriguez",
+    "username": "ameliarodriguez1",
+    "avatar": "https://i.pravatar.cc/150?img=1",
+    "location": "Berlin, Germany",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "5 years in trading. Specialized in Breakout + Trendlines + R:R 1:2",
+    "marketExpertise": [
+      "Indices",
+      "Crypto"
+    ],
+    "tradingStyle": "Swing",
+    "strategy": "Breakout + Trendlines + R:R 1:2",
+    "yearsOfExperience": "7+",
+    "clientResults": "Helped 14+ clients with 20% monthly return",
+    "availableServices": [
+      "Signal Services",
+      "Mentorship"
+    ],
+    "languagesSpoken": [
+      "English",
+      "French"
+    ],
+    "responseTime": "Replies within a day",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "10",
+    "followers": [
+      "user15",
+      "user5",
+      "user11",
+      "user9",
+      "user10",
+      "user4",
+      "user3",
+      "user8",
+      "user2",
+      "user13"
+    ],
+    "following": [
+      "user19",
+      "user11"
+    ]
+  },
+  {
+    "id": "user2",
+    "name": "Harper Brown",
+    "username": "harperbrown2",
+    "avatar": "https://i.pravatar.cc/150?img=2",
+    "location": "Sydney, Australia",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "6 years in trading. Specialized in Price Action + Order Blocks + R:R 1:3",
+    "marketExpertise": [
+      "Indices",
+      "Stocks"
+    ],
+    "tradingStyle": "Swing",
+    "strategy": "Price Action + Order Blocks + R:R 1:3",
+    "yearsOfExperience": "4+",
+    "clientResults": "Helped 15+ clients with 69% monthly return",
+    "availableServices": [
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English"
+    ],
+    "responseTime": "Replies within 4 hours",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "13",
+    "followers": [
+      "user4"
+    ],
+    "following": [
+      "user12",
+      "user3",
+      "user14"
+    ]
+  },
+  {
+    "id": "user3",
+    "name": "Sophia Anderson",
+    "username": "sophiaanderson3",
+    "avatar": "https://i.pravatar.cc/150?img=3",
+    "location": "London, UK",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "4 years in trading. Specialized in Volume Profile + S/R",
+    "marketExpertise": [
+      "Forex",
+      "Stocks"
+    ],
+    "tradingStyle": "Scalping",
+    "strategy": "Volume Profile + S/R",
+    "yearsOfExperience": "6+",
+    "clientResults": "Helped 19+ clients with 43% monthly return",
+    "availableServices": [
+      "Account Management",
+      "Signal Services",
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English"
+    ],
+    "responseTime": "Replies within a day",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "4",
+    "followers": [
+      "user8",
+      "user2",
+      "user15",
+      "user16",
+      "user1",
+      "user14",
+      "user5"
+    ],
+    "following": [
+      "user9",
+      "user4",
+      "user16",
+      "user19"
+    ]
+  },
+  {
+    "id": "user4",
+    "name": "Mason Wilson",
+    "username": "masonwilson4",
+    "avatar": "https://i.pravatar.cc/150?img=4",
+    "location": "New York, USA",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "2 years in trading. Specialized in Volume Profile + S/R",
+    "marketExpertise": [
+      "Forex",
+      "Indices"
+    ],
+    "tradingStyle": "Scalping",
+    "strategy": "Volume Profile + S/R",
+    "yearsOfExperience": "5+",
+    "clientResults": "Helped 20+ clients with 42% monthly return",
+    "availableServices": [
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English"
+    ],
+    "responseTime": "Replies within a day",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "11",
+    "followers": [
+      "user18",
+      "user16",
+      "user9",
+      "user8",
+      "user6",
+      "user7",
+      "user5",
+      "user15",
+      "user12",
+      "user14"
+    ],
+    "following": [
+      "user17"
+    ]
+  },
+  {
+    "id": "user5",
+    "name": "Sophia Smith",
+    "username": "sophiasmith5",
+    "avatar": "https://i.pravatar.cc/150?img=5",
+    "location": "London, UK",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "8 years in trading. Specialized in Volume Profile + S/R",
+    "marketExpertise": [
+      "Forex",
+      "Crypto"
+    ],
+    "tradingStyle": "Position",
+    "strategy": "Breakout + Trendlines + R:R 1:2",
+    "yearsOfExperience": "6+",
+    "clientResults": "Helped 6+ clients with 51% monthly return",
+    "availableServices": [
+      "Signal Services",
+      "Mentorship"
+    ],
+    "languagesSpoken": [
+      "English",
+      "French"
+    ],
+    "responseTime": "Replies within 4 hours",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "12",
+    "followers": [
+      "user13",
+      "user10",
+      "user16",
+      "user6",
+      "user4",
+      "user17",
+      "user18"
+    ],
+    "following": [
+      "user8",
+      "user7",
+      "user12"
+    ]
+  },
+  {
+    "id": "user6",
+    "name": "Emily Williams",
+    "username": "emilywilliams6",
+    "avatar": "https://i.pravatar.cc/150?img=6",
+    "location": "New York, USA",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "2 years in trading. Specialized in Volume Profile + S/R",
+    "marketExpertise": [
+      "Indices",
+      "Crypto"
+    ],
+    "tradingStyle": "Position",
+    "strategy": "Volume Profile + S/R",
+    "yearsOfExperience": "3+",
+    "clientResults": "Helped 14+ clients with 34% monthly return",
+    "availableServices": [
+      "Account Management",
+      "Signal Services",
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English",
+      "French"
+    ],
+    "responseTime": "Replies within a day",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "14",
+    "followers": [
+      "user16",
+      "user12",
+      "user7",
+      "user14",
+      "user18",
+      "user3",
+      "user2",
+      "user8"
+    ],
+    "following": [
+      "user20"
+    ]
+  },
+  {
+    "id": "user7",
+    "name": "Ethan Garcia",
+    "username": "ethangarcia7",
+    "avatar": "https://i.pravatar.cc/150?img=7",
+    "location": "London, UK",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "5 years in trading. Specialized in Price Action + Order Blocks + R:R 1:3",
+    "marketExpertise": [
+      "Stocks",
+      "Forex"
+    ],
+    "tradingStyle": "Position",
+    "strategy": "Volume Profile + S/R",
+    "yearsOfExperience": "6+",
+    "clientResults": "Helped 12+ clients with 31% monthly return",
+    "availableServices": [
+      "Account Management",
+      "Signal Services",
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English",
+      "German"
+    ],
+    "responseTime": "Replies within 4 hours",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "15",
+    "followers": [
+      "user1"
+    ],
+    "following": [
+      "user14",
+      "user2",
+      "user4",
+      "user10",
+      "user19",
+      "user3",
+      "user8",
+      "user20",
+      "user12"
+    ]
+  },
+  {
+    "id": "user8",
+    "name": "Amelia Garcia",
+    "username": "ameliagarcia8",
+    "avatar": "https://i.pravatar.cc/150?img=8",
+    "location": "Toronto, Canada",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "7 years in trading. Specialized in Price Action + Order Blocks + R:R 1:3",
+    "marketExpertise": [
+      "Crypto",
+      "Stocks"
+    ],
+    "tradingStyle": "Position",
+    "strategy": "Price Action + Order Blocks + R:R 1:3",
+    "yearsOfExperience": "8+",
+    "clientResults": "Helped 5+ clients with 57% monthly return",
+    "availableServices": [
+      "Account Management",
+      "Signal Services",
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English"
+    ],
+    "responseTime": "Replies within a day",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "16",
+    "followers": [
+      "user13",
+      "user4",
+      "user20",
+      "user3"
+    ],
+    "following": [
+      "user10",
+      "user5",
+      "user14",
+      "user17",
+      "user18",
+      "user4",
+      "user13",
+      "user9",
+      "user12"
+    ]
+  },
+  {
+    "id": "user9",
+    "name": "Jackson Miller",
+    "username": "jacksonmiller9",
+    "avatar": "https://i.pravatar.cc/150?img=9",
+    "location": "Berlin, Germany",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "6 years in trading. Specialized in Breakout + Trendlines + R:R 1:2",
+    "marketExpertise": [
+      "Stocks",
+      "Forex"
+    ],
+    "tradingStyle": "Swing",
+    "strategy": "Breakout + Trendlines + R:R 1:2",
+    "yearsOfExperience": "7+",
+    "clientResults": "Helped 13+ clients with 35% monthly return",
+    "availableServices": [
+      "Account Management",
+      "Signal Services",
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English",
+      "Spanish"
+    ],
+    "responseTime": "Replies within a day",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "17",
+    "followers": [
+      "user2",
+      "user12"
+    ],
+    "following": [
+      "user4",
+      "user7",
+      "user18",
+      "user15",
+      "user6",
+      "user3"
+    ]
+  },
+  {
+    "id": "user10",
+    "name": "Olivia Smith",
+    "username": "oliviasmith10",
+    "avatar": "https://i.pravatar.cc/150?img=10",
+    "location": "Sydney, Australia",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "6 years in trading. Specialized in Volume Profile + S/R",
+    "marketExpertise": [
+      "Forex",
+      "Crypto"
+    ],
+    "tradingStyle": "Position",
+    "strategy": "Breakout + Trendlines + R:R 1:2",
+    "yearsOfExperience": "6+",
+    "clientResults": "Helped 17+ clients with 53% monthly return",
+    "availableServices": [
+      "Account Management",
+      "Signal Services",
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English"
+    ],
+    "responseTime": "Replies within 4 hours",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "18",
+    "followers": [
+      "user12"
+    ],
+    "following": [
+      "user19",
+      "user4",
+      "user3",
+      "user20",
+      "user9",
+      "user18",
+      "user1",
+      "user17",
+      "user2",
+      "user15"
+    ]
+  },
+  {
+    "id": "user11",
+    "name": "Lucas Brown",
+    "username": "lucasbrown11",
+    "avatar": "https://i.pravatar.cc/150?img=11",
+    "location": "Berlin, Germany",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "2 years in trading. Specialized in Volume Profile + S/R",
+    "marketExpertise": [
+      "Crypto",
+      "Stocks"
+    ],
+    "tradingStyle": "Swing",
+    "strategy": "Price Action + Order Blocks + R:R 1:3",
+    "yearsOfExperience": "8+",
+    "clientResults": "Helped 5+ clients with 20% monthly return",
+    "availableServices": [
+      "Account Management",
+      "Signal Services",
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English",
+      "German"
+    ],
+    "responseTime": "Replies within a day",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "19",
+    "followers": [
+      "user8",
+      "user1",
+      "user2",
+      "user3",
+      "user6",
+      "user14",
+      "user10"
+    ],
+    "following": [
+      "user4",
+      "user7",
+      "user13",
+      "user12",
+      "user14",
+      "user1"
+    ]
+  },
+  {
+    "id": "user12",
+    "name": "Harper Smith",
+    "username": "harpersmith12",
+    "avatar": "https://i.pravatar.cc/150?img=12",
+    "location": "Berlin, Germany",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "8 years in trading. Specialized in Price Action + Order Blocks + R:R 1:3",
+    "marketExpertise": [
+      "Forex",
+      "Crypto"
+    ],
+    "tradingStyle": "Scalping",
+    "strategy": "Breakout + Trendlines + R:R 1:2",
+    "yearsOfExperience": "7+",
+    "clientResults": "Helped 5+ clients with 20% monthly return",
+    "availableServices": [
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English"
+    ],
+    "responseTime": "Replies within a day",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "20",
+    "followers": [
+      "user5",
+      "user14",
+      "user18",
+      "user4",
+      "user16",
+      "user15",
+      "user10",
+      "user13",
+      "user17",
+      "user8"
+    ],
+    "following": [
+      "user18",
+      "user9",
+      "user3",
+      "user8",
+      "user7",
+      "user10",
+      "user15",
+      "user20",
+      "user1",
+      "user2"
+    ]
+  },
+  {
+    "id": "user13",
+    "name": "Aiden Hernandez",
+    "username": "aidenhernandez13",
+    "avatar": "https://i.pravatar.cc/150?img=13",
+    "location": "New York, USA",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "3 years in trading. Specialized in Price Action + Order Blocks + R:R 1:3",
+    "marketExpertise": [
+      "Indices",
+      "Forex"
+    ],
+    "tradingStyle": "Swing",
+    "strategy": "Breakout + Trendlines + R:R 1:2",
+    "yearsOfExperience": "6+",
+    "clientResults": "Helped 9+ clients with 42% monthly return",
+    "availableServices": [
+      "Account Management",
+      "Signal Services",
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English",
+      "French"
+    ],
+    "responseTime": "Replies within 4 hours",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "21",
+    "followers": [
+      "user10"
+    ],
+    "following": [
+      "user14",
+      "user1",
+      "user2",
+      "user17"
+    ]
+  },
+  {
+    "id": "user14",
+    "name": "Olivia Martinez",
+    "username": "oliviamartinez14",
+    "avatar": "https://i.pravatar.cc/150?img=14",
+    "location": "London, UK",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "8 years in trading. Specialized in Breakout + Trendlines + R:R 1:2",
+    "marketExpertise": [
+      "Indices",
+      "Stocks"
+    ],
+    "tradingStyle": "Swing",
+    "strategy": "Volume Profile + S/R",
+    "yearsOfExperience": "6+",
+    "clientResults": "Helped 19+ clients with 51% monthly return",
+    "availableServices": [
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English"
+    ],
+    "responseTime": "Replies within a day",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "30",
+    "followers": [
+      "user4",
+      "user8",
+      "user1",
+      "user18",
+      "user20",
+      "user2",
+      "user10",
+      "user12",
+      "user6",
+      "user7"
+    ],
+    "following": [
+      "user4",
+      "user6",
+      "user1",
+      "user8",
+      "user20",
+      "user2",
+      "user18",
+      "user3",
+      "user5",
+      "user9"
+    ]
+  },
+  {
+    "id": "user15",
+    "name": "Liam Johnson",
+    "username": "liamjohnson15",
+    "avatar": "https://i.pravatar.cc/150?img=15",
+    "location": "Sydney, Australia",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "3 years in trading. Specialized in Breakout + Trendlines + R:R 1:2",
+    "marketExpertise": [
+      "Stocks",
+      "Forex"
+    ],
+    "tradingStyle": "Scalping",
+    "strategy": "Breakout + Trendlines + R:R 1:2",
+    "yearsOfExperience": "8+",
+    "clientResults": "Helped 9+ clients with 36% monthly return",
+    "availableServices": [
+      "Signal Services",
+      "Mentorship"
+    ],
+    "languagesSpoken": [
+      "English"
+    ],
+    "responseTime": "Replies within 4 hours",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "40",
+    "followers": [
+      "user1",
+      "user12",
+      "user16",
+      "user6",
+      "user2",
+      "user20",
+      "user11"
+    ],
+    "following": [
+      "user16",
+      "user13"
+    ]
+  },
+  {
+    "id": "user16",
+    "name": "Noah Hernandez",
+    "username": "noahhernandez16",
+    "avatar": "https://i.pravatar.cc/150?img=16",
+    "location": "Sydney, Australia",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "6 years in trading. Specialized in Breakout + Trendlines + R:R 1:2",
+    "marketExpertise": [
+      "Crypto",
+      "Forex"
+    ],
+    "tradingStyle": "Position",
+    "strategy": "Breakout + Trendlines + R:R 1:2",
+    "yearsOfExperience": "4+",
+    "clientResults": "Helped 12+ clients with 32% monthly return",
+    "availableServices": [
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English",
+      "Spanish"
+    ],
+    "responseTime": "Replies within a day",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "23",
+    "followers": [
+      "user1",
+      "user14"
+    ],
+    "following": [
+      "user19",
+      "user15",
+      "user17",
+      "user10",
+      "user14",
+      "user1",
+      "user2",
+      "user9"
+    ]
+  },
+  {
+    "id": "user17",
+    "name": "Aiden Garcia",
+    "username": "aidengarcia17",
+    "avatar": "https://i.pravatar.cc/150?img=17",
+    "location": "London, UK",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "8 years in trading. Specialized in Breakout + Trendlines + R:R 1:2",
+    "marketExpertise": [
+      "Forex",
+      "Crypto"
+    ],
+    "tradingStyle": "Position",
+    "strategy": "Volume Profile + S/R",
+    "yearsOfExperience": "7+",
+    "clientResults": "Helped 9+ clients with 39% monthly return",
+    "availableServices": [
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English",
+      "Spanish"
+    ],
+    "responseTime": "Replies within 4 hours",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "24",
+    "followers": [
+      "user16",
+      "user3",
+      "user6",
+      "user20",
+      "user12",
+      "user7",
+      "user4",
+      "user1"
+    ],
+    "following": [
+      "user13",
+      "user7",
+      "user10",
+      "user4",
+      "user5",
+      "user6",
+      "user11",
+      "user1",
+      "user2"
+    ]
+  },
+  {
+    "id": "user18",
+    "name": "Aiden Lopez",
+    "username": "aidenlopez18",
+    "avatar": "https://i.pravatar.cc/150?img=18",
+    "location": "Sydney, Australia",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "6 years in trading. Specialized in Volume Profile + S/R",
+    "marketExpertise": [
+      "Stocks",
+      "Indices"
+    ],
+    "tradingStyle": "Scalping",
+    "strategy": "Volume Profile + S/R",
+    "yearsOfExperience": "4+",
+    "clientResults": "Helped 13+ clients with 21% monthly return",
+    "availableServices": [
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English"
+    ],
+    "responseTime": "Replies within 4 hours",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "25",
+    "followers": [
+      "user2",
+      "user11",
+      "user8",
+      "user5",
+      "user1",
+      "user13",
+      "user14",
+      "user4"
+    ],
+    "following": [
+      "user15",
+      "user3",
+      "user2",
+      "user17",
+      "user14",
+      "user13",
+      "user4",
+      "user19",
+      "user8"
+    ]
+  },
+  {
+    "id": "user19",
+    "name": "Amelia Miller",
+    "username": "ameliamiller19",
+    "avatar": "https://i.pravatar.cc/150?img=19",
+    "location": "London, UK",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "2 years in trading. Specialized in Breakout + Trendlines + R:R 1:2",
+    "marketExpertise": [
+      "Crypto",
+      "Forex"
+    ],
+    "tradingStyle": "Swing",
+    "strategy": "Price Action + Order Blocks + R:R 1:3",
+    "yearsOfExperience": "3+",
+    "clientResults": "Helped 5+ clients with 23% monthly return",
+    "availableServices": [
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English"
+    ],
+    "responseTime": "Replies within 4 hours",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "26",
+    "followers": [
+      "user16",
+      "user8",
+      "user7",
+      "user14",
+      "user20"
+    ],
+    "following": [
+      "user7",
+      "user13",
+      "user8",
+      "user4",
+      "user10"
+    ]
+  },
+  {
+    "id": "user20",
+    "name": "Amelia Brown",
+    "username": "ameliabrown20",
+    "avatar": "https://i.pravatar.cc/150?img=20",
+    "location": "Berlin, Germany",
+    "profileSummary": "Experienced trader with a results-driven strategy.",
+    "experience": "7 years in trading. Specialized in Price Action + Order Blocks + R:R 1:3",
+    "marketExpertise": [
+      "Forex",
+      "Indices"
+    ],
+    "tradingStyle": "Position",
+    "strategy": "Breakout + Trendlines + R:R 1:2",
+    "yearsOfExperience": "4+",
+    "clientResults": "Helped 8+ clients with 22% monthly return",
+    "availableServices": [
+      "Paid Analysis"
+    ],
+    "languagesSpoken": [
+      "English",
+      "French"
+    ],
+    "responseTime": "Replies within a day",
+    "proofOfWork": "https://tradingview.com/u/sampleuser",
+    "clientConditions": "Only verified clients with ₹25,000+ capital.",
+    "rank": "27",
+    "followers": [
+      "user2",
+      "user7",
+      "user4",
+      "user5",
+      "user6",
+      "user15",
+      "user1"
+    ],
+    "following": [
+      "user19",
+      "user11",
+      "user1",
+      "user9",
+      "user17",
+      "user2",
+      "user16",
+      "user6"
+    ]
+  }
+]
