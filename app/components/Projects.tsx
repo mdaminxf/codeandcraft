@@ -119,13 +119,14 @@ const Projects = ({ refProjects }: ProjectProps) => {
       className="bg-zinc-300 shadow-xl rounded-xl shadow-md p-4 flex flex-col"
     >
      <div className="w-full aspect-video overflow-hidden rounded-md bg-gray-200">
-  <Image
-    src={project.image}
-    alt={project.title}
-    loading="lazy"
-    className="w-full h-full object-fill object-center"
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-  />
+<img
+  src={project.image}
+  alt={project.title}
+  loading="lazy"
+  class="w-full h-full object-fill object-center"
+  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+/>
+
 </div>
 
       <div className="p-6">
